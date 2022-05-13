@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  body: 80vw;
+}
+
+.section__menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.section {
+  &__left {
+    width: 45%;
+    display: flex;
+    flex-flow: column wrap;
+
+    &-food {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &-coffee {
+      display: flex;
+      flex-flow: column wrap;
+      height: 40%;
+    }
+  }
+
+  &__right {
+    width: 45%;
+    display: flex;
+    flex-flow: column wrap;
+
+    &-food {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  &__item {
+    width: 45%;
+
+    &-product {
+      display: flex;
+      flex-direction: row;
+      width: 80%;
+      justify-content: space-between;
+      margin: 0.1em 0;
+
+      & h1 {
+        margin: 0.25em 0;
+      }
+      & p {
+        margin: 0.25em 0;
+      }
+    }
+  }
+}
