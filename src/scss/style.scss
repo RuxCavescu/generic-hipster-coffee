@@ -4,7 +4,6 @@
 
 body {
   font-family: "Roboto Condensed", sans-serif;
-  body: 80vw;
 }
 
 .section__menu {
@@ -58,6 +57,121 @@ body {
       & p {
         margin: 0.25em 0;
       }
+    }
+  }
+}
+* {
+  margin: 0;
+  font-family: "Roboto Condensed";
+  color: #737373;
+}
+.logo {
+  width: 7rem;
+  height: 7rem;
+}
+
+nav {
+  background-color: #f8f9fa;
+  height: 7rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+nav a {
+  color: #d7d8d8;
+  text-decoration: none;
+  padding-right: 2rem;
+}
+
+nav a:hover {
+  color: #9e9e9f;
+}
+
+.coffee {
+  display: flex;
+  flex-direction: column;
+}
+.coffee__title {
+  padding: 13% 15%;
+  .coffee__title a {
+    color: lightskyblue;
+  }
+  .coffee__title h3 {
+    font-size: 2rem;
+    padding-bottom: 2%;
+  }
+}
+
+.coffee__catalog {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.coffee__catalog h4 {
+  background-color: #d7d8d8;
+  color: black;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  font-size: 2rem;
+}
+
+.coffee__catalog p {
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.coffee__catalog__boxes {
+  margin: 1rem;
+  background-color: #d7d8d8;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 15em;
+  background-color: #343a40;
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40%;
+    margin: 3em 0;
+    a {
+      font-size: 1em;
+      line-height: 28px;
+      font-weight: 400;
+      color: #0099ff;
+    }
+  }
+  .social {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    .hashtag {
+      font-size: 1.25em;
+      margin: 0;
+      font-weight: 700;
+    }
+    a {
+      font-size: 1em;
+      line-height: 28px;
+      font-weight: 400;
+      color: #0099ff;
     }
   }
 }
